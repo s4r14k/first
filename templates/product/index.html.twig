@@ -10,7 +10,9 @@
 
 <div class="example-wrapper">
     <h1>Hello {{ controller_name }}! ✅</h1>
-
+    <h2>user {{ userId }}</h2>
+    <h2>spam {{spam }}</h2>
+    <h3>{{ app.flashes('info')[0] }}</h3>
     This friendly message is coming from:
     <ul>
         <li>Your controller at <code><a href="{{ 'D:/Project/Symfony/first/src/Controller/ProductController.php'|file_link(0) }}">src/Controller/ProductController.php</a></code></li>

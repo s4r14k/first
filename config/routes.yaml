@@ -6,6 +6,6 @@ product:
    path: /products
    controller: App\Controller\ProductController::index
 
-product_id:
+product_view:
    path: /products/{id}
    controller: App\Controller\ProductController::view
