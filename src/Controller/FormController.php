@@ -22,6 +22,10 @@ class FormController extends AbstractController
 
         $form = $this->createForm(ArticleType::class, $article);
 
+        if ($form->isSubmitted() && $form->isValid()) {
+           dump($article);
+        }
+
         return $this->render('form/index.html.twig', [
             'controller_name' => 'FormController',
             'form' => $form->createView(),
